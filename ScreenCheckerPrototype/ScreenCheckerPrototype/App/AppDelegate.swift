@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  ScreenCheckerPrototype
-//
-//  Created by Артем Леонов on 25.11.24.
-//
-
 import UIKit
 
 @main

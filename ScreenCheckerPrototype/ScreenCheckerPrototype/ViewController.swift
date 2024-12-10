@@ -1,5 +1,4 @@
 import UIKit
-import AppIntents
 
 class ViewController: UIViewController {
     let mainButton = UIButton()
@@ -11,22 +10,22 @@ class ViewController: UIViewController {
     }
     
     func configureButton() {
-        mainButton.setImage(UIImage(named: "eatOne"), for: .normal)
-        mainButton.bounds.size = CGSize(width: 100, height: 100)
+        mainButton.setTitle("Add shortcut", for: .normal)
+        mainButton.titleLabel?.font = .systemFont(ofSize: 25, weight: .bold)
+        mainButton.bounds.size = CGSize(width: 200, height: 60)
+        mainButton.backgroundColor = .blue
+        mainButton.layer.cornerRadius = 12
         mainButton.center = view.center
         mainButton.addTarget(self, action: #selector(mainButtonTapped), for: .touchUpInside)
-        
         view.addSubview(mainButton)
     }
     
     @objc func mainButtonTapped() {
-        if let url = URL(string: "https://www.icloud.com/shortcuts/6b0c322094d84f30bc2765e1f46471f3") {
-            if UIApplication.shared.canOpenURL(url) {
-                UIApplication.shared.open(url, options: [:])
-            } else {
-                print("Cannot open URL")
-            }
-        }
+        guard let url = Shortcuts.checkPhoneNumber.url else { return }
+        
+        UIApplication.shared.canOpenURL(url)
+        ? UIApplication.shared.open(url, options: [:])
+        : print("Cannot open URL")
     }
 }
 
