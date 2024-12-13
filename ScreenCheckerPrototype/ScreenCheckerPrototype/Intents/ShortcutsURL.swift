@@ -6,7 +6,7 @@ enum Shortcuts {
     var url: URL? {
         switch self {
         case .checkPhoneNumber:
-            URL(string: "https://www.icloud.com/shortcuts/7b9923a66cfa4410b1300b69450bc7ab")
+            URL(string: "https://www.icloud.com/shortcuts/7d976ed28a78492db72c24a26d93e3d8")
         }
     }
 }

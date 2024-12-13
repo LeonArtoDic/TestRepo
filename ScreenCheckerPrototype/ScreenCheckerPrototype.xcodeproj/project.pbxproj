@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB2760A92D0C36AC0041E73A /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2760A82D0C36AC0041E73A /* ImageLoader.swift */; };
+		CB2760AC2D0C399F0041E73A /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2760AB2D0C399F0041E73A /* Banner.swift */; };
 		CBB1A94C2CF4FD0000A77E9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB1A94B2CF4FD0000A77E9F /* AppDelegate.swift */; };
 		CBB1A94E2CF4FD0000A77E9F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB1A94D2CF4FD0000A77E9F /* SceneDelegate.swift */; };
 		CBB1A9502CF4FD0000A77E9F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB1A94F2CF4FD0000A77E9F /* ViewController.swift */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CB2760A82D0C36AC0041E73A /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		CB2760AB2D0C399F0041E73A /* Banner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Banner.swift; sourceTree = "<group>"; };
 		CBB1A9482CF4FD0000A77E9F /* ScreenCheckerPrototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreenCheckerPrototype.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBB1A94B2CF4FD0000A77E9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBB1A94D2CF4FD0000A77E9F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +53,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CB2760AA2D0C398A0041E73A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CB2760AB2D0C399F0041E73A /* Banner.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		CBB1A93F2CF4FD0000A77E9F = {
 			isa = PBXGroup;
 			children = (
@@ -68,6 +80,7 @@
 		CBB1A94A2CF4FD0000A77E9F /* ScreenCheckerPrototype */ = {
 			isa = PBXGroup;
 			children = (
+				CB2760AA2D0C398A0041E73A /* Views */,
 				CBF547DA2D088EE0003FEE22 /* App */,
 				CBF547D02D088E56003FEE22 /* Intents */,
 				CBF547CB2D088E56003FEE22 /* Network */,
@@ -101,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				CBF547D32D088E56003FEE22 /* CheckNumberService.swift */,
+				CB2760A82D0C36AC0041E73A /* ImageLoader.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -192,6 +206,8 @@
 				CBF547D82D088E56003FEE22 /* CheckPhoneNumberIntent.swift in Sources */,
 				CBF547D92D088E56003FEE22 /* CheckNumberService.swift in Sources */,
 				CBF547D42D088E56003FEE22 /* NetworkErrors.swift in Sources */,
+				CB2760AC2D0C399F0041E73A /* Banner.swift in Sources */,
+				CB2760A92D0C36AC0041E73A /* ImageLoader.swift in Sources */,
 				CBF547DC2D088F99003FEE22 /* ShortcutsURL.swift in Sources */,
 				CBF547D52D088E56003FEE22 /* NetworkManager.swift in Sources */,
 				CBF547D62D088E56003FEE22 /* CharacterModel.swift in Sources */,

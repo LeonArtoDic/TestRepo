@@ -1,5 +1,6 @@
 import Foundation
 import AppIntents
+import SwiftUI
 
 struct CheckPhoneNumberIntent: AppIntent {
     static var title: LocalizedStringResource = "Check phone number"
@@ -12,9 +13,11 @@ struct CheckPhoneNumberIntent: AppIntent {
         Summary("Check \(\.$phoneNumber)")
     }
 
-    func perform() async throws -> some ProvidesDialog {
-        let result = try await CheckNumberService().chekPhone(number: phoneNumber)
-        return .result(dialog: "\(result)")
+    func perform() async throws -> some ShowsSnippetView {
+        let result = try await CheckNumberService().chekPhone(number: ["1", "2", "3", "4", "5"].randomElement()!)
+        let avatar = await ImageLoader.shared.loadImage(from: result.image)
+        let banner = BannerView(image: avatar, name: result.name, location: result.location.name)
+        return .result(view: banner)
     }
 }
 
