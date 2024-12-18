@@ -14,6 +14,9 @@
 		CB71CB9B2D12D7D200C0D716 /* Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB71CB962D12D7D100C0D716 /* Audio.swift */; };
 		CB71CB9C2D12D7D200C0D716 /* CallDirectoryHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB71CB972D12D7D100C0D716 /* CallDirectoryHandler.swift */; };
 		CB71CB9D2D12D7D200C0D716 /* CallManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB71CB982D12D7D100C0D716 /* CallManager.swift */; };
+		CB71CB9F2D12E69C00C0D716 /* FirstExtractPhoneNumberIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB71CB9E2D12E69C00C0D716 /* FirstExtractPhoneNumberIntent.swift */; };
+		CB71CBA22D12FE8800C0D716 /* ExtractorPhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB71CBA12D12FE8800C0D716 /* ExtractorPhoneNumber.swift */; };
+		CB71CBA42D130A7100C0D716 /* SecondExtractPhoneNumberIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB71CBA32D130A7100C0D716 /* SecondExtractPhoneNumberIntent.swift */; };
 		CBB1A94C2CF4FD0000A77E9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB1A94B2CF4FD0000A77E9F /* AppDelegate.swift */; };
 		CBB1A94E2CF4FD0000A77E9F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB1A94D2CF4FD0000A77E9F /* SceneDelegate.swift */; };
 		CBB1A9502CF4FD0000A77E9F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB1A94F2CF4FD0000A77E9F /* ViewController.swift */; };
@@ -36,6 +39,9 @@
 		CB71CB962D12D7D100C0D716 /* Audio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Audio.swift; sourceTree = "<group>"; };
 		CB71CB972D12D7D100C0D716 /* CallDirectoryHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallDirectoryHandler.swift; sourceTree = "<group>"; };
 		CB71CB982D12D7D100C0D716 /* CallManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallManager.swift; sourceTree = "<group>"; };
+		CB71CB9E2D12E69C00C0D716 /* FirstExtractPhoneNumberIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstExtractPhoneNumberIntent.swift; sourceTree = "<group>"; };
+		CB71CBA12D12FE8800C0D716 /* ExtractorPhoneNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtractorPhoneNumber.swift; sourceTree = "<group>"; };
+		CB71CBA32D130A7100C0D716 /* SecondExtractPhoneNumberIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondExtractPhoneNumberIntent.swift; sourceTree = "<group>"; };
 		CBB1A9482CF4FD0000A77E9F /* ScreenCheckerPrototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreenCheckerPrototype.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBB1A94B2CF4FD0000A77E9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBB1A94D2CF4FD0000A77E9F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +89,14 @@
 			path = CallForTest;
 			sourceTree = "<group>";
 		};
+		CB71CBA02D12FE5E00C0D716 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				CB71CBA12D12FE8800C0D716 /* ExtractorPhoneNumber.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
 		CBB1A93F2CF4FD0000A77E9F = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +116,7 @@
 		CBB1A94A2CF4FD0000A77E9F /* ScreenCheckerPrototype */ = {
 			isa = PBXGroup;
 			children = (
+				CB71CBA02D12FE5E00C0D716 /* Tools */,
 				CBF547DA2D088EE0003FEE22 /* App */,
 				CB2760AA2D0C398A0041E73A /* Views */,
 				CBF547D02D088E56003FEE22 /* Intents */,
@@ -127,6 +142,8 @@
 			isa = PBXGroup;
 			children = (
 				CBF547D12D088E56003FEE22 /* CheckPhoneNumberIntent.swift */,
+				CB71CB9E2D12E69C00C0D716 /* FirstExtractPhoneNumberIntent.swift */,
+				CB71CBA32D130A7100C0D716 /* SecondExtractPhoneNumberIntent.swift */,
 				CBF547DB2D088F99003FEE22 /* ShortcutsURL.swift */,
 			);
 			path = Intents;
@@ -227,6 +244,7 @@
 				CBF547D72D088E56003FEE22 /* Endpoint.swift in Sources */,
 				CBB1A9502CF4FD0000A77E9F /* ViewController.swift in Sources */,
 				CBF547D82D088E56003FEE22 /* CheckPhoneNumberIntent.swift in Sources */,
+				CB71CBA42D130A7100C0D716 /* SecondExtractPhoneNumberIntent.swift in Sources */,
 				CB71CB992D12D7D200C0D716 /* ProviderDelegate.swift in Sources */,
 				CB71CB9C2D12D7D200C0D716 /* CallDirectoryHandler.swift in Sources */,
 				CBF547D92D088E56003FEE22 /* CheckNumberService.swift in Sources */,
@@ -237,8 +255,10 @@
 				CB71CB9B2D12D7D200C0D716 /* Audio.swift in Sources */,
 				CBF547DC2D088F99003FEE22 /* ShortcutsURL.swift in Sources */,
 				CBF547D52D088E56003FEE22 /* NetworkManager.swift in Sources */,
+				CB71CBA22D12FE8800C0D716 /* ExtractorPhoneNumber.swift in Sources */,
 				CBF547D62D088E56003FEE22 /* CharacterModel.swift in Sources */,
 				CBB1A94C2CF4FD0000A77E9F /* AppDelegate.swift in Sources */,
+				CB71CB9F2D12E69C00C0D716 /* FirstExtractPhoneNumberIntent.swift in Sources */,
 				CBB1A94E2CF4FD0000A77E9F /* SceneDelegate.swift in Sources */,
 				CB71CB9D2D12D7D200C0D716 /* CallManager.swift in Sources */,
 			);
